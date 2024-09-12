@@ -1,18 +1,23 @@
+/*divs que tem em todos*/
 body
 {
     background-color: white;
+    margin: 0px;
 }
 .content
 {
-    margin: 50px;
+    margin-left: 7%;
+    margin-bottom: 10%;
+    
     padding-top: 100px;
-    width: 70%;
-    background-color: rgb(255, 249, 240);
-    padding: 50px;
+    width: 75%;
+    background-color: rgb(249, 241, 230);
+    padding: 5%;
     padding-top: 150px;
     box-shadow: -5px 5px 10px rgb(224, 184, 102);
     margin-top: 100px;
-    border-top-right-radius: 10px;
+    border-top-right-radius: 30px;
+
 }
 
 #menu
@@ -21,7 +26,7 @@ body
     margin: 0px;
     width: 100%;
     height: 40px;
-    background-color: rgb(66, 34, 9);
+    background-color: rgb(65, 46, 33);
     color: white;
     position: fixed;
     display: flex;
@@ -43,25 +48,73 @@ body
     text-decoration: none;
 }
 
-.a
+.rodape
 {
-    font-size: 30px;
+    background-color: rgb(166, 126, 109);
+    padding:20px 0;
+    padding-left: 50px;
+    padding-bottom: 25px;
+    padding-top: 50px;
+    font-size: 1.25em;
+}
+
+.tituloRodape
+{
+    font-size: 27px;
+    color: white;
+}
+
+.rodape ul
+{
+    list-style: none;
+    line-height: 1.5em;
+    
+}
+
+.rodape a 
+{
+    color: rgb(252, 235, 207);
+    text-decoration: none;
+}
+
+.rodape li
+{
+    color:rgb(252, 235, 207);
+}
+/*----------------------*/
+
+
+
+
+/*index*/
+.tituloRest
+{
+    font-size: 25px;
     margin-top:-150px;
+    line-height: 3em;
 }
 
-#a p{
-    margin-top:-40px;
-}
-
-
-.texto
+#imagensIndex
 {
-    width: 250px;
-    margin-left: 20px;
-    font-size: 17px;
-    line-height: 1.5em; 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
+@media (min-width: 50vw)
+{
+    #imagensIndex
+    {
+    }
+}
+/*----------------------*/
+
+
+
+
+
+
+/*formatação*/
 .bold
 {
     font-weight: bold;
@@ -78,8 +131,26 @@ body
 {
     background-color: #ebcb69;
 }
+/*----------------------*/
 
 
+
+/*formatação de texto*/
+#textoIndex
+{
+    width: 100%;
+    font-size: 20px;
+    line-height: 1.5em; 
+}
+/*----------------------*/
+
+
+
+/*listas*/
+.content ul
+{
+    list-style: none;
+}
 .prato
 {
     display: flex;
@@ -130,37 +201,7 @@ a :link
     font-size: 20px;
     width: 70%;
 }
-.rodape
-{
-    background-color: rgb(150, 90, 65);
-    padding:20px 0;
-    padding-left: 40px;
-    font-size: 20px;
-    padding-bottom: 50px;
-    margin-left: -10px;
-    margin-bottom: -20px;
-    margin-right: -12px;
-}
 
-.rodape a :link
-{
-    color: white;
-}
-.rodape a 
-{
-    color: rgb(252, 235, 207);
-    text-decoration: none;
-}
-.rodape a :hover
-{
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-}
-
-.rodape li
-{
-    color:rgb(252, 235, 207);
-}
 
 #menuBaixo
 {
@@ -169,7 +210,7 @@ a :link
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background-color: rgb(66, 34, 9);
+    background-color: rgb(65, 46, 33);
     color: white;
     height: 40px;
     z-index: 2;
