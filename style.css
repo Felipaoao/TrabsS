@@ -8,7 +8,6 @@ body
 {
     margin-left: 7%;
     margin-bottom: 10%;
-    
     padding-top: 100px;
     width: 75%;
     background-color: rgb(249, 241, 230);
@@ -22,7 +21,7 @@ body
 
 #menu
 {
-    padding: 0px 0;
+    padding-top: 15px;
     margin: 0px;
     width: 100%;
     height: 40px;
@@ -39,7 +38,6 @@ body
 #menu a
 {
     font-size: 20px;
-    position:fixed;
     color: rgb(255, 243, 230);
 } 
 #menu a:link {
@@ -55,10 +53,7 @@ body
 .rodape
 {
     background-color: rgb(166, 126, 109);
-    padding:20px 0;
-    padding-left: 50px;
-    padding-bottom: 25px;
-    padding-top: 50px;
+    padding:50px 50px 25px;
     font-size: 1.25em;
 }
 
@@ -74,7 +69,6 @@ body
 {
     list-style: none;
     line-height: 1.5em;
-    
 }
 
 .rodape a 
@@ -107,10 +101,11 @@ body
     gap: 15px;
 }
 
-@media (min-width: 50vw)
+@media (max-width: 480px)
 {
-    #imagensIndex
+    #contentContato
     {
+
     }
 }
 /*----------------------*/
@@ -226,13 +221,12 @@ body
 /*contato*/
 #contentContato
 {
+    margin: 10% 15% 10%;
     background-color: rgb(255, 249, 240);
     box-shadow: -5px 5px 10px rgb(224, 184, 102);
     padding: 20px;
     width: 70%;
-    margin-left: 14%;
-    margin-top: 150px;
-    margin-bottom: 150px;
+    height: 70%;
     border-radius: 30px;
     align-items: center;
 }
@@ -250,7 +244,6 @@ body
     border: 1px black solid;
     border-radius: 20px;
     padding: 50px;
-    padding-bottom: 60px;
     margin-bottom: 90px;
 }
 
