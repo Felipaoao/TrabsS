@@ -136,7 +136,7 @@ body
     line-height: 1.5em; 
 }
 
-@media (max-width: 512px)
+@media (max-width: 512px) and (min-width: 360px)
 {
     #textoIndex
     {
@@ -147,6 +147,7 @@ body
         height:200px;
     }
 }
+
 
 @media (min-width: 513px) and (max-width:  700px )
 {
@@ -190,6 +191,7 @@ body
 
 
 /*menu*/
+
 #contentMenu
 {
     padding-left:3%;
@@ -235,165 +237,6 @@ body
     margin-top: 50px;
 
 }
-/*----------------------*/
-
-
-/*contato*/
-#contentContato
-{
-    margin: 10% 15% 10%;
-    background-color: rgb(255, 249, 240);
-    box-shadow: -5px 5px 10px rgb(224, 184, 102);
-    padding: 20px;
-    width: 70%;
-    height: 70%;
-    border-radius: 30px;
-    align-items: center;
-}
-
-#contato
-{
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 80px;
-    display: flex;
-    flex-wrap: wrap;
-    gap:20px;
-    flex-direction: row;
-    justify-content: space-around;
-    border: 1px black solid;
-    border-radius: 20px;
-    padding: 50px;
-    margin-bottom: 90px;
-}
-
-@media (max-width:  1076px)
-{
-    #contato
-    {
-        gap: 40px;
-    }
-}
-
-@media (max-width: 778px) and (min-width: 640px)
-{
-    #contentContato
-    {
-        margin-left: 14%;
-        margin-right: 14%;
-    }
-    
-}
-
-.tituloContato
-{
-    font-size: 25px;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-
-
-@media (max-width: 640px) and (min-width: 430px)
-{
-    #contentContato
-    {
-        margin: 0%;
-        width: 100%;
-        height:100%;
-        box-shadow: none;
-    
-    }
-
-    #contato
-    {
-        margin-left: 8%;
-        margin-right: 8%;
-    }
-
-    table
-    {
-        height: auto;
-        width: auto;
-        
-    }
-    .tituloContato
-    {
-        font-size: 25px;
-    }
-}
-
-/*para calular*/
-@media (max-width: 430px)
-{
-    #contato
-    {
-        border: none;
-        padding: 0px;
-    }
-    #contentContato
-    {
-        margin: 0%;
-        width: 100%;
-        height:100%;
-        box-shadow: none;
-        padding: 1%;
-    
-    }
-
-    #menu a
-    {
-        font-size: 15px;
-        padding: 20px;
-    }
-
-    .rodape{
-        padding: 17px;
-    }
-
-    .tituloRodape
-    {
-        font-size: 25px;
-    }
-
-    .rodape ul
-    {
-        font-size: 0.9em;
-        line-height: 1.7em;
-    }
-
-    .content{
-        margin: 0%;
-        width: 100%;
-        height:100%;
-        box-shadow: none;
-        padding: 1%;
-    }
-}
-
-a :link
-{
-    color: rgb(34, 18, 8);
-    text-decoration: none;
-}
-#titulo
-{
-    font-size: 50px;
-    margin-left: 40px;
-    margin-top: -50px;
-}
-#menucomida a :link
-{
-    margin-left:50px;
-    color: rgb(34, 18, 8);
-    text-decoration: none;
-}
-#texto
-{
-    font-size: 20px;
-    width: 70%;
-}
-
 
 #menuBaixo
 {
@@ -432,20 +275,280 @@ a :link
 }
 
 
+/*----------------------*/
+
+
+/*contato*/
+#contentContato
+{
+    margin: 10% 15% 10%;
+    background-color: rgb(255, 249, 240);
+    box-shadow: -5px 5px 10px rgb(224, 184, 102);
+    padding: 20px;
+    width: 70%;
+    height: 70%;
+    border-radius: 30px;
+    align-items: center;
+}
+
+#contato
+{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    gap:20px;
+    flex-direction: row;
+    justify-content: space-around;
+    border: 2px rgb(251, 221, 179) solid;
+    border-radius: 20px;
+    padding: 50px;
+    margin-bottom: 90px;
+}
+
+@media (max-width:  1076px)
+{
+    #contato
+    {
+        gap: 40px;
+    }
+}
+
+@media (max-width: 778px) and (min-width: 640px)
+{
+    #contentContato
+    {
+        margin-left: 14%;
+        margin-right: 14%;
+    }
+
+    #menuBaixo a
+    {
+        font-size: 15px;
+    }
+    
+}
+
+.tituloContato
+{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+
+@media (max-width: 640px) and (min-width: 430px)
+{
+    #content
+    {
+        margin: 0%;
+        width: 100%;
+        height:100%;
+        box-shadow: none;
+    }
+    #contentContato
+    {
+        margin: 0%;
+        width: 100%;
+        height:100%;
+        box-shadow: none;
+    
+    }
+
+    #contato
+    {
+        margin-left: 8%;
+        margin-right: 8%;
+    }
+
+    table
+    {
+        height: auto;
+        width: auto;
+        
+    }
+    .tituloContato
+    {
+        font-size: 25px;
+    }
+
+    .content{
+        margin: 0%;
+        margin-top: 50px;
+        box-shadow: none;
+        width: 100%;
+    }
+
+    #tituloMenu
+    {
+        font-size:60px;
+    }
+
+    #menuBaixo a
+    {
+        font-size: 12px;
+    }
+}
+
+/*para calular*/
+@media (max-width: 430px)
+{
+
+    .textoMenu
+    {
+        text-align: justify;
+    }
+    
+    #contato
+    {
+        border: none;
+        padding: 0px;
+    }
+    #contentContato
+    {
+        margin: 0%;
+        width: 100%;
+        height:100%;
+        box-shadow: none;
+        padding: 1%;
+    
+    }
+
+    #menu a
+    {
+        font-size: 15px;
+        padding: 20px;
+    }
+
+    #menuBaixo a
+    {
+        font-size: 12px;
+    }
+
+    .rodape{
+        padding: 17px;
+    }
+
+    .tituloRodape
+    {
+        font-size: 25px;
+    }
+
+    .rodape ul
+    {
+        font-size: 0.9em;
+        line-height: 1.7em;
+    }
+
+    .content{
+        margin: 0%;
+        margin-top: 50px;
+        width: 100%;
+        box-shadow: none;
+        padding: 1%;
+        padding-right:20px;
+    }
+
+    img
+    {
+        height: 10em;
+    }
+
+    .nomeSecao
+    {
+        font-size: 1.5em;;
+    }
+
+    #tituloMenu
+    {
+        font-size:50px;
+    }
+
+}
+
+@media (max-width: 320px)
+{
+
+    img
+    {
+        height: 7em;
+    }
+
+    .textoMenu
+    {
+        font-size: 15px;
+    }
+}
+
+
+a :link
+{
+    color: rgb(34, 18, 8);
+    text-decoration: none;
+}
+#titulo
+{
+    font-size: 50px;
+    margin-left: 40px;
+    margin-top: -50px;
+}
+#menucomida a :link
+{
+    margin-left:50px;
+    color: rgb(34, 18, 8);
+    text-decoration: none;
+}
+#texto
+{
+    font-size: 20px;
+    width: 70%;
+}
+
+
+
+
+
+form input
+{
+    border: 1px ;
+    background-color: #ebcb69;
+}
+
 form input, form textarea, form select
 {
-    background-color: rgb(255, 249, 240);
-    border-radius: 5px;;
+    border: none;
+    outline:none;
+    background-color:rgb(255, 237, 211);
+    border-radius: 5px;
 }
 
-form input :focus, form textarea :focus
+form input:focus, form textarea:focus, form select:focus
 {
-    background-color: rgb(255, 255, 255);
+    background-color: white;
 }
 
-form input[type="text"] :hover, form textarea :hover, input[type="submit"]:hover
+form input:hover, form textarea:hover, input[type="submit"]:hover, form select:hover
 {
     background-color: bisque;
+}
+
+input [type="text"]:focus
+{
+    background-color: white;
+}
+
+table
+{
+    background-color: rgb(255, 237, 211);
+    border: 1px solid rgb(255, 248, 238);
+    
+}
+
+th, td
+{
+    border: 1px solid rgb(255, 248, 238);
 }
 
 
