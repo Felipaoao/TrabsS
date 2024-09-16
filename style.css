@@ -18,6 +18,16 @@ body
 
 }
 
+.img
+{
+    transition: transform .2s ;
+}
+
+.img :hover
+{
+    transform: scale(1.25);
+}
+
 #menu
 {
     padding-top: 15px;
@@ -90,6 +100,8 @@ body
     font-size: 25px;
     margin-top:-150px;
     line-height: 3em;
+    position: relative;
+    animation: voaMlk 2.3s;
 }
 
 #imagensIndex
@@ -148,7 +160,6 @@ body
     font-family: "Dancing Script", cursive;
     font-optical-sizing: auto;
     font-size: 80px;
-                
 }
 
 #tituloMenu
@@ -281,15 +292,12 @@ body
 }
 
 
-
 .tituloContato
 {
     font-size: 25px;
     font-weight: bold;
     margin-bottom: 20px;
 }
-
-
 
 
 a :link
@@ -314,10 +322,6 @@ a :link
     font-size: 20px;
     width: 70%;
 }
-
-
-
-
 
 form input
 {
@@ -360,37 +364,9 @@ th, td
     border: 1px solid rgb(255, 248, 238);
 }
 
-@media (max-width: 900px)
-{
-    .prato{
-        display: flex;
-        flex-wrap: wrap;
-    }
-}
-
-@media (max-width: 512px) and (min-width: 360px)
-{
-    
-}
 
 
-@media (min-width: 513px) and (max-width:  700px )
-{
-    img
-    {
-        height: 250px;
-    }
-}
-
-@media (max-width:  1076px)
-{
-    #contato
-    {
-        gap: 40px;
-    }
-}
-
-@media (max-width: 778px) and (min-width: 640px)
+@media (min-width: 481px) and (max-width: 767px) 
 {
     #contentContato
     {
@@ -403,25 +379,14 @@ th, td
         font-size: 15px;
     }
     
-}
-
-
-@media (max-width: 640px) and (min-width: 480px)
-{
-    #content
-    {
-        margin: 0%;
-        width: 100%;
-        height:100%;
-        box-shadow: none;
-    }
+    
     #contentContato
     {
         margin: 0%;
         width: 100%;
         height:100%;
         box-shadow: none;
-    
+        
     }
 
     #contato
@@ -448,7 +413,10 @@ th, td
         width: 100%;
     }
     
-
+    img
+    {
+        height: 250px;
+    }
 
     #tituloMenu
     {
@@ -461,11 +429,20 @@ th, td
     }
 }
 
-
-
 /*para celular*/
 @media (max-width: 480px)
 {
+    .content {
+        margin: 0%;
+        width:100%;
+        height:100%;
+        box-shadow: none;
+    }
+
+    body
+    {
+        background-color: rgb(255, 249, 240);
+    }
 
     #textoIndex
     {
@@ -488,6 +465,7 @@ th, td
         border: none;
         padding: 0px;
     }
+
     #contentContato
     {
         margin: 0%;
@@ -495,7 +473,6 @@ th, td
         height:100%;
         box-shadow: none;
         padding: 1%;
-    
     }
 
     #menu a
@@ -525,15 +502,7 @@ th, td
         line-height: 1.7em;
     }
 
-    .content{
-        margin: 0%;
-        margin-top: 50px;
-        width: 100%;
-        box-shadow: none;
-        padding: 1%;
-        padding-right:20px;
-    }
-
+   
     .nomeSecao
     {
         font-size: 1.5em;
@@ -587,3 +556,7 @@ th, td
 }
 
 
+@keyframes voaMlk {
+    from {left: -5%;opacity:0%;} 
+    to  {left: 0%; opacity: 100%;}
+  }
