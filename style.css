@@ -225,7 +225,7 @@ body
 #menuBaixo
 {
     position: fixed;
-    padding-top: 10px;
+    padding: 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -237,9 +237,6 @@ body
     bottom: 0;
     left: 0;
     align-items: center;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-bottom: 10px;
     font-size: 20px;
 }
 #menuBaixo a:link {
@@ -249,7 +246,6 @@ body
 
 #menuBaixo a
 {
-    font-size: 20px;
     color: rgb(255, 248, 241);
 } 
 
@@ -374,11 +370,12 @@ th, td
         margin-right: 14%;
     }
 
-    #menuBaixo a
-    {
-        font-size: 15px;
+    #menuBaixo{
+        font-size: 20px;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 60px;
     }
-    
     
     #contentContato
     {
@@ -386,7 +383,6 @@ th, td
         width: 100%;
         height:100%;
         box-shadow: none;
-        
     }
 
     #contato
@@ -423,20 +419,25 @@ th, td
         font-size:60px;
     }
 
-    #menuBaixo a
-    {
-        font-size: 12px;
-    }
+    
 }
 
 /*para celular*/
 @media (max-width: 480px)
 {
     .content {
+        padding-top: 150px;
         margin: 0%;
         width:100%;
         height:100%;
         box-shadow: none;
+    }
+
+    #menuBaixo{
+        font-size: 16px;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 60px;
     }
 
     body
@@ -475,17 +476,7 @@ th, td
         padding: 1%;
     }
 
-    #menu a
-    {
-        font-size: 15px;
-        padding: 20px;
-    }
-
-    #menuBaixo a
-    {
-        font-size: 12px;
-    }
-
+    
     .rodape{
         padding: 17px;
         width: 100%;
@@ -514,7 +505,6 @@ th, td
     }
    
 }
-
 
 
 @media print{
