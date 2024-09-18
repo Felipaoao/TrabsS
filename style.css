@@ -348,6 +348,13 @@ input [type="text"]:focus
     background-color: white;
 }
 
+form input[type="submit"]
+{
+    width: 160px;
+    height: 30px;
+
+}
+
 table
 {
     background-color: rgb(255, 237, 211);
@@ -360,6 +367,21 @@ th, td
     border: 1px solid rgb(255, 248, 238);
 }
 
+@media (max-width:1064px) and (min-width: 767px)
+{
+    .contato
+    {
+        
+    }
+}
+
+@media (max-width: 900px)
+{
+    .prato{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
 
 
 @media (min-width: 481px) and (max-width: 767px) 
@@ -389,6 +411,7 @@ th, td
     {
         margin-left: 8%;
         margin-right: 8%;
+        gap: 50px;
     }
 
     table
@@ -414,9 +437,30 @@ th, td
         height: 250px;
     }
 
-    #tituloMenu
+    #tituloMenu, .tituloinicio
     {
         font-size:60px;
+    }
+
+    .tituloRest #subtitulo
+    {
+        font-size: 24px;
+    }
+
+    .rodape ul
+    {
+        font-size: 0.9em;
+        line-height: 1.7em;
+    }
+
+    .rodape{
+        padding: 20px;
+        width: 100%;
+    }
+
+    .tituloRodape
+    {
+        font-size: 26px;
     }
 
     
@@ -450,21 +494,28 @@ th, td
         line-height: 1.8em;
     }
     
-    #tituloMenu
+    #tituloMenu, .tituloinicio
     {
         font-size:50px;
     }
+
 
     .textoMenu
     {
         text-align: justify;
         font-size: 15px;
     }
+
+    #textoIndex
+    {
+        font-size: 18px;
+    }
     
     #contato
     {
         border: none;
         padding: 0px;
+        gap: 70px;
     }
 
     #contentContato
@@ -502,6 +553,11 @@ th, td
     img
     {
         height: 7em;
+    }
+
+    .tituloRest #subtitulo
+    {
+        font-size: 20px;
     }
    
 }
